@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
+import notesData from "../notes";
 
 function App() {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState(notesData); //initial state
   const [newNote, setNewNote] = useState({
     title: "",
     content: ""
